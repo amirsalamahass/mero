@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mo.css">
+    <title>mo salama </title>
+</head>
+<body>
+    <div class="falcon"> 
+    <div class="amir"> 
+        <h2>mo salama</h2>
+        <p>fron end developer html and css and javascript</p>
+    </div>
+    <div class="salama">
+        <input  placeholder="title" type="text" id="title">
+        <div class="price">
+            <input onkeyup="gettotle()" type="number" placeholder="price" id="price">
+            <input onkeyup="gettotle()" type="number" placeholder="taxet" id="taxet">
+            <input onkeyup="gettotle()" type="number" placeholder="ads" id="ads">
+            <input onkeyup="gettotle()" type="number" placeholder="discount" id="discount">
+            <small id="totle">12345</small>
+        </div>
+        <input type="namber" placeholder="count" id="count">
+        <input type="text" placeholder="category" id="category">
+        <button id="submit">create</button>
+    </div>
+    <div class="hassan"> 
+
+        <div class="serchblock">
+            <input onkeyup="searchdata(this.value)" type="text" placeholder="serch" id="search">
+            <div class="btnserch">
+                <button onclick="getsearchmood(this.id)" id="serchtitle">Search By Tltle</button>
+                <button onclick="getsearchmood(this.id)" id="serchcategory">Search By Category</button>
+            </div>
+        </div>
+     <div id="deleteall">
+
+     </div>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxet</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delet </th>
+        </tr>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    
+    </div>
+    </div>
+
+    <script src="mo.js"></script>
+</body>
+</html>
